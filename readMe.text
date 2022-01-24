@@ -1,0 +1,11 @@
+1. setup url in following ( if update required)
+   Config/config.properties > url
+
+2. To update test tags or add scenarios
+   src/test/java/resources
+
+3. To run test - run "Test runner"
+    src/test/java/runners/TestRunner
+
+4. find report after execution
+    target/cucumber-reports/report.html
