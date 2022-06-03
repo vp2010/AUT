@@ -1,12 +1,13 @@
-package stepdefinitions.web.sc;
+package stepdefinition.web.sc;
 
-import cucumber.api.DataTable;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import pageObjects.PageObjManager;
-import pageObjects.ProductPage;
+import web.pageObjects.sc.ProductPage;
+import web.utility.PageObjManager;
+import web.pageObjects.sc.PageObjManager.*;
 
 import java.util.List;
 

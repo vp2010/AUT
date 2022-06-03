@@ -1,10 +1,4 @@
-package stepdefinitions.web.myTime;
-
-
-
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import web.utility.Context;
+package stepdefinition.web.myTime;
 
 
 public class StepsHook {

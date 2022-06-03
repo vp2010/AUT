@@ -1,4 +1,4 @@
-package stepdefinitions.web.myTime;
+package stepdefinition.web.myTime;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

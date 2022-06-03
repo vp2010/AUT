@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import util.Util;
+import web.utility.JS;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +46,7 @@ public class ProductPage {
 
         String productXp = "//div[text()='" + productName + "']";
         WebElement currProduct;
-        Util.scrollToElementview( driver, currProduct=driver.findElement(By.xpath(productXp)));
+        JS.scrollToElementview( driver, currProduct=driver.findElement(By.xpath(productXp)));
 
         WebElement currProductAddButton = driver.findElement(By.xpath( productXp  + "//following::button[1]"));
         WebElement currProductPrice = driver.findElement(By.xpath( productXp  + "//following::div[@class='inventory_item_price'][1]"));
@@ -61,7 +62,7 @@ public class ProductPage {
     public void navigateToCheckout(){
         //scrollTop
 
-        Util.scrollToTop(driver,checkout);
+        //JS.scrollToTop(driver,checkout);
         checkout.click();
     }
 

@@ -1,29 +1,64 @@
-Feature: Login page feature
+Feature: Login feature
+
+  Background:
+    Given I launch app
+
+  @First
+  Scenario: valid login
+    Given I start application
+    When I login with username and password
+    Then I verify page title
+
+# surefire plugin failure handling
+
+  @First
+  Scenario: valid login
+    Given I start application
+    When I login with username and password
+    Then I verify page not exist
 
 
-  Scenario: Login page title
-    Given user navigates to login page
-    When user verify page title
-    Then page title should be "Login - My Store"
 
-  Scenario: Forgot Password Link
-    Given user navigates to login page
-    Then forgot password link should be displayed
+#    Cucumber variation
 
-  Scenario: Login with valid credentials
-    Given user navigates to login page
-    When user login to account
-      | username      | password    |
-      | xyz@gmail.com | selenium123 |
-    When user verify page title
-    Then page title should not be "My Account - My Store"
+  @Parameter
+  Scenario: login with valid username and password as "iPass123"
+    Given I start application
+    Then I login with username as "iUsername" and password as "iPass123"
+    Then I verify page title
 
-  Scenario: new feature of cucumber5
-    Then I read data using pojo
-      | name | city |
-      | John | Lake |
-    Then I have few books in hand such as java,cs,csharp
-    Then I read multiple data using pojo
-      | name | city | age |
-      | John | Lake | 34  |
-      | Mira | Palm | 45  |
+  @DataTable
+  Scenario: login scenario using Datatable
+    Given I start application
+    Then I login using following information
+      | id | name | city    | dob  |
+      | s1 | sam  | chicago | s123 |
+    Then I verify page title
+
+  @DataTable_pojo
+  Scenario: login scenario using Datatable_pojo
+    Given I start application
+    Then I print following information
+      | firstName | lastName | city      | state    | country |
+      | Abhay     | Shah     | Ahmedabad | Gujarat  | India   |
+      | Sam       | Milind   | Chicago   | Illinois | USA     |
+      | Nancy     | Cruz     | Brisbane  | London   | U.K.    |
+    Then I verify page title
+
+
+  @Example
+  Scenario Outline: login scenario with multiple user
+    Given I start application
+    Then I login with username as "<user>"
+    Then I verify page title
+
+    Examples:
+      | user |
+      | mike |
+      | tim  |
+      | sam  |
+
+
+
+
+

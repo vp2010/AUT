@@ -95,7 +95,7 @@ public class Login {
             System.out.print( user.getLastName()  + " ");
             System.out.print( user.getCity()  + " ");
             System.out.print( user.getState()  + " ");
-          //  System.out.println( user.getCountry() );
+            System.out.println( user.getCountry() );
 
             System.out.println( "- - - - - - - - - -");
         }

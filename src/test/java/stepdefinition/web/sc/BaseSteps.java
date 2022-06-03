@@ -1,9 +1,9 @@
-package stepdefinitions.web.sc;
+package stepdefinition.web.sc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import pageObjects.PageObjManager;
+import web.utility.PageObjManager;
 
 import java.util.concurrent.TimeUnit;
 

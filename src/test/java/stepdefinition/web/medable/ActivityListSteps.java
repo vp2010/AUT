@@ -1,4 +1,4 @@
-package stepdefinitions.web.medable;
+package stepdefinition.web.medable;
 
 import cucumber.api.java.en.Then;
 import org.testng.Assert;

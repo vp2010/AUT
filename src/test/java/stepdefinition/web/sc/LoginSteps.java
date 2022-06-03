@@ -1,4 +1,4 @@
-package stepdefinitions.web.sc;
+package stepdefinition.web.sc;
 
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;

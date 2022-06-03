@@ -1,9 +1,9 @@
-package stepdefinitions.web.medable;
+package stepdefinition.web.medable;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import pageObjects.PageObjManager;
+import web.utility.PageObjManager;
 
 import java.util.concurrent.TimeUnit;
 

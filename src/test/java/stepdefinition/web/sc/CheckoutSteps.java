@@ -1,10 +1,11 @@
-package stepdefinitions.web.sc;
+package stepdefinition.web.sc;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import pageObjects.CheckoutPage;
-import pageObjects.ProductPage;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import web.pageObjects.sc.CheckoutPage;
+import web.pageObjects.sc.ProductPage;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class CheckoutSteps extends BaseSteps{
     ProductPage productPage;
 
     public CheckoutSteps(){
-        checkoutPage = pageObjectManager.getCheckoutPage();
+        checkoutPage = pageObjectManager.getcheckoutPage();
         productPage = pageObjectManager.getProductPage();
     }
 

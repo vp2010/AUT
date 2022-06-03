@@ -1,4 +1,4 @@
-package runner;
+package testRunner;
 
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;

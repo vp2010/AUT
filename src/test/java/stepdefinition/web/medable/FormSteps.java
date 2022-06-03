@@ -1,10 +1,10 @@
-package stepdefinitions.web.medable;
+package stepdefinition.web.medable;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.en.Then;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import pageObjects.FormStepPage;
-import util.JS;
+import web.pageObjects.medable.FormStepPage;
+import web.utility.JS;
 import java.util.List;
 
 public class FormSteps extends BaseSteps{
@@ -23,7 +23,7 @@ public class FormSteps extends BaseSteps{
     public void patient_completes_Form_step_with_values(DataTable table) throws Exception{
         formStepPage = pageObjectManager.getformStepPage();
 
-        List<List<String>>data = table.raw();
+        List<List<String>>data = table.asLists();
 
         JS.scrollDown(driver);
         formStepPage.setEmail(data.get(1).get(1));

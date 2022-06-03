@@ -1,4 +1,4 @@
-package testRunner.Runner;
+package testRunner;
 
 
 import org.testng.ITestContext;

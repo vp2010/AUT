@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 
 
-public class SimpleSteps {
+public class SimpleSteps  extends Hook {
 
     public static ResponseOptions<Response> response1;
 
