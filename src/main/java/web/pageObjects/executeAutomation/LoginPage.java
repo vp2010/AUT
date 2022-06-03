@@ -44,5 +44,18 @@ public class LoginPage {
         signInButton.submit();
     }
 
+    public void clickContact(){
+        System.out.println("");
+    }
+
+
+
+    public void FillForm(){
+        System.out.println("");
+    }
+
+
+
+
 
 }

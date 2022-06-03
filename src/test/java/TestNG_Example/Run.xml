@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test NG suite" verbose="10"   preserve-order="false"  configfailurepolicy="skip" parallel="tests" thread-count="2">
+
+    <test   name="Complete test run 1">
+
+        <groups>
+            <define name="base1"/>
+            <run>
+                <include name = "base1" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestNG_Example.MyBaseClass"/>
+            <class name="TestNG_Example.MyClass1"/>
+        </classes>
+    </test>
+
+    <test   name="Complete test run 2" enabled="false">
+
+        <parameter name="myName" value="Vipul"/>
+        <classes>
+            <class name="TestNG_Example.MyClass2"/>
+            <class name="TestNG_Example.MyClass3"/>
+
+        </classes>
+    </test>
+
+
+</suite>

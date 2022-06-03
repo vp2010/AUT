@@ -1,4 +1,4 @@
-package web.stepDefinition.executeAutomation;
+package stepdefinition.web.executeAutomation;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
