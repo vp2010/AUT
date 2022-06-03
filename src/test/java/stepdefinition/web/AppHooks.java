@@ -1,4 +1,4 @@
-package stepdefinition.hooks;
+package web.hooks;
 
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;

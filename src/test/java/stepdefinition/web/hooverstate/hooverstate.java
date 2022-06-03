@@ -1,4 +1,4 @@
-package web.stepDefinition.hooverstate;
+package stepdefinitions.web.hooverstate;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;

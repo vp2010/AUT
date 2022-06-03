@@ -1,4 +1,4 @@
-package web.stepDefinition.myTime;
+package stepdefinitions.web.myTime;
 
 
 

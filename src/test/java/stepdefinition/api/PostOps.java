@@ -1,4 +1,4 @@
-package api.stepdefinition;
+package stepdefinitions.api;
 
 import api.pojo.Address;
 import api.pojo.Employee;

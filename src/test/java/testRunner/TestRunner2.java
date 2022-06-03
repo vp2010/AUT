@@ -1,29 +1,28 @@
-package testRunner.Runner;
+package runner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.BeforeTest;
 
 
 //    @RunWith(Cucumber.class)
-    @CucumberOptions(features = {"/Users/Vipul2010/Desktop/Vipul/Automation/EA/Core/src/test/java/Selenium/Features"},
+    @CucumberOptions(features = {"src/test/java/Selenium/Features"},
             plugin = {"pretty",
                     "json:target/cucumber.json",
                     "html:target/site"
                      },
             glue={"Selenium/Steps"},
-            tags={"@First"},
+            tags="@First",
 //            tags={"not @second"   //   @smoke and @first //  @smoke or @database},
             monochrome = false,
-            dryRun = false,
-            strict=false
+            dryRun = false
     )
 
 
 
 //    @Listeners(Runner.NGTestListener.class)
-    public class TestRunner extends AbstractTestNGCucumberTests {
+    public class TestRunner2 extends AbstractTestNGCucumberTests {
 
 //    public Object[][] Scenarios(){
 //        return super.scenarios();
