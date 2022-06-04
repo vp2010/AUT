@@ -1,10 +1,10 @@
-package stepdefinition.web.myTime;
+package stepdefinition.web.assessment;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import web.pageObjects.myTime.HomePage;
+import web.pageObjects.assessment.HomePage;
 import web.utility.Context;
 
 public class HomePageSteps {

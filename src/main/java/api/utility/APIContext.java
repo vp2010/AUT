@@ -17,7 +17,7 @@ public class APIContext {
         this.token = token;
     }
 
-    public ResponseOptions<Response> getResponse() {
+    public static ResponseOptions<Response> getResponse() {
         return response;
     }
 
@@ -25,7 +25,7 @@ public class APIContext {
         this.response = response;
     }
 
-    public ResponseOptions<Response> response;
+    public static ResponseOptions<Response> response;
 
 
 }

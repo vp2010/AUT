@@ -1,8 +1,8 @@
-package stepdefinition.web.medable;
+package stepdefinition.web.assessment;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import pageObjects.ActivityListPage;
+import web.pageObjects.assessment.ActivityListPage;
 
 public class ActivityListSteps extends BaseSteps {
 	

@@ -1,7 +1,7 @@
-package stepdefinition.web.medable;
+package stepdefinition.web.assessment;
 
-import cucumber.api.java.en.Given;
-import pageObjects.LoginPage;
+import io.cucumber.java.en.Given;
+import web.pageObjects.assessment.LoginPage;
 
 public class LoginSteps extends BaseSteps{
 

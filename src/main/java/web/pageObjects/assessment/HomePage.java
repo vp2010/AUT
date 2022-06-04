@@ -1,4 +1,4 @@
-package web.pageObjects.myTime;
+package web.pageObjects.assessment;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

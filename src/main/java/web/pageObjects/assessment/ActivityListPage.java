@@ -1,4 +1,4 @@
-package web.pageObjects.medable;
+package web.pageObjects.assessment;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

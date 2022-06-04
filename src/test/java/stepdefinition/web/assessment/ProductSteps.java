@@ -1,17 +1,15 @@
-package stepdefinition.web.sc;
+package stepdefinition.web.assessment;
 
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import web.pageObjects.sc.ProductPage;
-import web.utility.PageObjManager;
-import web.pageObjects.sc.PageObjManager.*;
+import web.pageObjects.assessment.ProductPage;
 
 import java.util.List;
 
-public class ProductSteps extends BaseSteps{
+public class ProductSteps extends BaseSteps {
 
     ProductPage productpage;
 

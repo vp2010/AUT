@@ -3,13 +3,13 @@
 <suite name="Suite" verbose="10" configfailurepolicy="skip">
         
     <listeners>
-        <listener class-name="Runner.NGTestListener"/>
+        <listener class-name="testRunner.NGTestListener"/>
     </listeners>
     
     <test   name="Complete test run">
             
             <classes>
-                <class name="Runner.TestRunner"/>
+                <class name="testRunner.TestRunner"/>
             </classes>
             
         </test>

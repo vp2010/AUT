@@ -1,4 +1,4 @@
-package stepdefinition.web.medable;
+package stepdefinition.web.assessment;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

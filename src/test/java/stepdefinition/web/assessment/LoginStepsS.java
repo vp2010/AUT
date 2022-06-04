@@ -1,26 +1,26 @@
-package stepdefinition.web.sc;
+package stepdefinition.web.assessment;
 
-import cucumber.api.DataTable;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Given;
-import pageObjects.LoginPage;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import web.pageObjects.assessment.LoginPageS;
 
 import java.util.List;
 
-public class LoginSteps extends BaseSteps{
+public class LoginStepsS extends BaseSteps {
 
-    LoginPage loginPage;
+    LoginPageS loginPageS;
 
-    public LoginSteps(){
-        loginPage = pageObjectManager.getLoginPage();
+    public LoginStepsS(){
+        loginPageS = pageObjectManager.getLoginPageSc();
     }
 
     @Given("^Patient navigate to activity list as \"([^\"]*)\"$")
     public void patient_navigate_to_activity_list_as(String username){
      
     	// creating the login page object
-    	loginPage = pageObjectManager.getLoginPage();
-        loginPage.login(username);
+    	loginPageS = pageObjectManager.getLoginPageSc();
+        loginPageS.login(username);
     }
 
     @Given("^user login to web with following credentials$")
@@ -31,13 +31,13 @@ public class LoginSteps extends BaseSteps{
         // E,K,V must be a scalar (String, Integer, Date, enum etc)
         List<String>  data = arg2.asList(String.class);
         data.stream().forEach(System.out::println);
-        loginPage.login1(data.get(1), data.get(2));
+        loginPageS.login1(data.get(1), data.get(2));
 
     }
 
 
     @Given("^set web url as \"([^\"]*)\"$")
     public void setWebUrlAs(String url) {
-        loginPage.openWeb(url);
+        loginPageS.openWeb(url);
     }
 }

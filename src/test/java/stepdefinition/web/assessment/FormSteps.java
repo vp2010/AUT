@@ -1,9 +1,9 @@
-package stepdefinition.web.medable;
+package stepdefinition.web.assessment;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import web.pageObjects.medable.FormStepPage;
+import web.pageObjects.assessment.FormStepPage;
 import web.utility.JS;
 import java.util.List;
 

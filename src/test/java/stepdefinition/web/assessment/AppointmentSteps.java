@@ -1,10 +1,10 @@
-package web.stepDefinition.myTime;
+package stepdefinition.web.assessment;
 
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import web.pageObjects.myTime.*;
+import web.pageObjects.assessment.AppointmentPage;
 import web.utility.Context;
 
 public class AppointmentSteps {

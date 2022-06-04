@@ -1,10 +1,10 @@
-package stepdefinition.web.myTime;
+package stepdefinition.web.assessment;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import web.pageObjects.myTime.AppointmentPage;
-import web.pageObjects.myTime.ConfirmationPage;
+import web.pageObjects.assessment.AppointmentPage;
+import web.pageObjects.assessment.ConfirmationPage;
 import web.utility.Context;
 
 public class ConfirmationSteps {

@@ -1,14 +1,15 @@
 package web.utility;
 
 import org.openqa.selenium.WebDriver;
-import web.pageObjects.medable.ActivityListPage;
-import web.pageObjects.medable.FormStepPage;
-import web.pageObjects.medable.LoginPage;
-import web.pageObjects.myTime.AppointmentPage;
-import web.pageObjects.myTime.ConfirmationPage;
-import web.pageObjects.myTime.HomePage;
-import web.pageObjects.sc.CheckoutPage;
-import web.pageObjects.sc.ProductPage;
+import web.pageObjects.assessment.ActivityListPage;
+import web.pageObjects.assessment.FormStepPage;
+import web.pageObjects.assessment.LoginPage;
+import web.pageObjects.assessment.AppointmentPage;
+import web.pageObjects.assessment.ConfirmationPage;
+import web.pageObjects.assessment.HomePage;
+import web.pageObjects.assessment.CheckoutPage;
+import web.pageObjects.assessment.LoginPageS;
+import web.pageObjects.assessment.ProductPage;
 
 public class PageObjManager {
 
@@ -20,6 +21,8 @@ public class PageObjManager {
     private ActivityListPage activityListPage;
     private ProductPage productPage;
     private CheckoutPage checkoutPage;
+    private LoginPage loginPage;
+    private LoginPageS loginPageS;
 
 
     public PageObjManager(WebDriver driver){
@@ -50,4 +53,18 @@ public class PageObjManager {
     public CheckoutPage getcheckoutPage(){
         return (checkoutPage == null) ? checkoutPage = new CheckoutPage(driver) : checkoutPage;
     }
+
+    public LoginPage getLoginPage(){
+        return (loginPage == null) ? loginPage = new LoginPage(driver) : loginPage;
+    }
+
+    public ActivityListPage getActivityListpage(){
+        return (activityListPage == null) ? activityListPage = new ActivityListPage(driver) : activityListPage;
+    }
+
+    public LoginPageS getLoginPageSc(){
+        return (loginPageS == null) ? loginPageS = new LoginPageS(driver) : loginPageS;
+    }
+
+
 }

@@ -1,15 +1,15 @@
-package stepdefinition.web.sc;
+package stepdefinition.web.assessment;
 
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import web.pageObjects.sc.CheckoutPage;
-import web.pageObjects.sc.ProductPage;
+import web.pageObjects.assessment.CheckoutPage;
+import web.pageObjects.assessment.ProductPage;
 
 import java.util.List;
 
-public class CheckoutSteps extends BaseSteps{
+public class CheckoutSteps extends BaseSteps {
 
     CheckoutPage checkoutPage;
     ProductPage productPage;

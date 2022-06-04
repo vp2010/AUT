@@ -6,20 +6,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-import stepdefinition.api.BaseUtil;
 import web.pageObjects.executeAutomation.LoginPage;
 import web.pojo.User2;
+import web.utility.Context;
 
 import java.util.List;
 
 
 public class Login {
 
-     BaseUtil base;
 
-    public Login(BaseUtil base){
-        this.base = base;
-
+    public Login( ){
     }
 
 
@@ -27,7 +24,7 @@ public class Login {
     public void navigate(){
 
         System.out.println("starting an application");
-        base.driver.get("http://www.executeAutomation.com/site");
+        Context.getDriver().get("http://www.executeAutomation.com/site");
 
     }
 
@@ -37,7 +34,7 @@ public class Login {
 //        WebElement element= base.driver.findElement(By.id("main-menu-item-788"));
 //        element.click();
 
-        LoginPage lp = new LoginPage(base.driver);
+        LoginPage lp = new LoginPage(Context.getDriver());
         lp.clickContact();
 
     }
@@ -49,7 +46,7 @@ public class Login {
 //        base.driver.findElement(By.id("nf-field-12")).sendKeys("Karthik");
 
 
-        LoginPage lp = new LoginPage(base.driver);
+        LoginPage lp = new LoginPage(Context.getDriver());
         lp.FillForm();
 
         Thread.sleep(5000);

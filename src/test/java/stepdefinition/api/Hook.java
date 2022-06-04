@@ -1,7 +1,6 @@
 package stepdefinition.api;
 
 import org.junit.Before;
-import stepdefinition.api.BaseUtil;
 
 public class Hook {
 

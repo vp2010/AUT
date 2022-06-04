@@ -1,4 +1,4 @@
-package web.pageObjects.sc;
+package web.pageObjects.assessment;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
-import util.Util;
+import web.utility.JS;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +90,7 @@ public class CheckoutPage {
         firstName.sendKeys("user123");
         lastName.sendKeys("doe123");
         zipcode.sendKeys("12345");
-        Util.scrollToElementview(driver, continuebtn);
+        JS.scrollToElementview(driver, continuebtn);
         continuebtn.click();
     }
 
@@ -109,7 +109,7 @@ public class CheckoutPage {
     }
 
     public void clickFinish(){
-        Util.scrollToElementview(driver,finish);
+        JS.scrollToElementview(driver,finish);
         finish.click();
     }
 
