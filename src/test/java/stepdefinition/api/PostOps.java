@@ -38,7 +38,9 @@ public class PostOps {
     // steps for EA scenario
     @Then("I should see the street name as {string} for {string}")
     public void i_should_see_the_street_name_as(String street, String type) {
-       Location[] location =  context.getResponse().getBody().as(Location[].class);
+
+        //deserialized
+        Location[] location =  context.getResponse().getBody().as(Location[].class);
        Address address = location[0].getAddress().stream().filter(e -> e.getType().equalsIgnoreCase(type)).findFirst().orElse(null);
        Assert.assertTrue(address.getStreet().equalsIgnoreCase(street));
 
@@ -46,7 +48,7 @@ public class PostOps {
     }
 
 
-
+    // databind require for POST Body -- REFER EA chap 7
     // serialization - worst for API parameter handling 
 //    @DataTableType
 //    public Employee convertData(Map<String, String> entry) {
@@ -79,17 +81,7 @@ public class PostOps {
     public void iPerformPostOperationWithBodyFor(String paramType, String url, DataTable data) {
         RestAssuredExtenstion EA = new RestAssuredExtenstion(url, "Post", null);
         List<List<String>> dataList = data.asLists();
-
         EA.ExecuteAPI(dataList,paramType);
     }
-
-
-
-
-
-
-
-
-
 
 }

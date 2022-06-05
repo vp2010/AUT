@@ -9,3 +9,28 @@
 
 4. find report after execution
     target/cucumber-reports/report.html
+
+----------------------------
+
+1. Merged assessment into 1
+2. Seperated Web vs UI
+3. Page OBJ Manager moved to Web.utiity
+4.
+--
+5. verify Cucumber with rest assured with data tab reading ( RAH)
+6. TA to checout
+
+
+
+
+
+EA steps:
+1. created REST EXT -- arrange , act ( getOps ); Hoo tac care of initiaize
+2. POST with path params
+3. DE.ETE
+4. PUT
+5. face server
+6. bearer tocen
+7. deser sim vs comp
+8. schema test - maven
+9.

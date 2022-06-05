@@ -6,10 +6,15 @@ import api.utility.RestAssuredExtenstion;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.http.ContentType;
 import org.junit.Assert;
 
 import java.util.List;
 import java.util.Map;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.containsInAnyOrder;
 
 public class GetOps {
     private APIContext context;
@@ -50,6 +55,8 @@ public class GetOps {
 
     @Then("I verify employee name displayed as {string}")
     public void iVerifyEmployeeNameDisplayedAs(String nameExp) {
+
+        // TO BE FIXED
 //        respEmp res1 = context.getResponse().getBody().as(respEmp.class);
 //        Assert.assertTrue(res1.getData().getEmployee_name().equalsIgnoreCase( nameExp));
 
@@ -62,5 +69,10 @@ public class GetOps {
         respEmpList res1 = context.getResponse().getBody().as(respEmpList.class);
         Assert.assertTrue(res1.getData()[0].getEmployee_name().equalsIgnoreCase( "Tiger Nixon"));
     }
+
+
+   // TODO - hamcrest methods , diff combo
+    // TODO - handing tabe with header without header
+
 
 }
